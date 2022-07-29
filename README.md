@@ -171,7 +171,8 @@ CV MSE       : 0.34414794743061067
 ````
 The Linear Model's Test mean squared error is .391 and its Cross-validation mean squared error is .344.
 ![plot](/Graphs/Linear-Models.png)
-````
+
+
 I used Tableau to graph the linear models. Some social and economic variables like Log GDP Per Capita have a linear relationship with happiness score, while others like Generosity clearly do not.
 
 ### 2b. Decision Tree Model
