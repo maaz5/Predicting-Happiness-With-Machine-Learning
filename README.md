@@ -6,7 +6,11 @@ An entry in the report is a country's average response to life evaluation questi
 
 To answer these questions, I will test the Machine Learning Algorithms Linear Regression, Decision Tree, Random Forest, Gradient Boosting, and Bagging on the World Happiness Report Dataset to find the the model that predicts the data best and identify the most statistically significant variables. I will graph the models using Tableau. 
 
-## 1. Cleaning the data 
+## Table of Contents
+
+-[Cleaning The Data](#Cleaning-The-Data)
+
+## 1. Cleaning The Data 
 
 First I will load in the Python libraries I need like Pandas and download the dataset off the World Happiness Report website https://worldhappiness.report/ed/2021/#appendices-and-data.
 
