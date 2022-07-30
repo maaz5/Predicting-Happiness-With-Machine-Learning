@@ -8,10 +8,17 @@ To answer these questions, I will test the Machine Learning Algorithms Linear Re
 
 ## Table of Contents
 
-1. [Cleaning The Data](#Cleaning-The-Data)
+1. [Cleaning The Data](#Cleaning The Data)
 2. [Modeling](#Modeling)
+    2a.[Linear Regression](#Linear-Regression)
+    2b.[Decision Tree Model](#Decision-Tree-Model)
+    2c.[Random Forest Model](#Random-Forest-Model)
+    2d.[Gradient Boosting Model](#Gradient-Boosting-Model)
+    2e.
+    2f.
+3. 
 
-<a name="Cleaning-The-Data"></a>
+<a name="Cleaning The Data"></a>
 ## 1. Cleaning The Data 
 
 First I will load in the Python libraries I need like Pandas and download the dataset off the World Happiness Report website https://worldhappiness.report/ed/2021/#appendices-and-data.
@@ -512,7 +519,7 @@ Now I can compare the mean squared errors across all the models to find the one 
 ![plot](/Graphs/MSE-Table.png)
 
 
-## Conclusions
+## 3. Conclusions
 
 As we can see in the Testing Performance Table, the Random Forest Model is the best at predicting happiness with the lowest Testing and Cross-validation Mean Squared Errors of .229 and .198, respectively.
 ````
