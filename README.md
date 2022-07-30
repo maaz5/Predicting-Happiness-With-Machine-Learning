@@ -8,17 +8,18 @@ To answer these questions, I will test the Machine Learning Algorithms Linear Re
 
 ## Table of Contents
 
-1. [Cleaning The Data](#Cleaning The Data)
+1. [Cleaning The Data](#Cleaning-The-Data)
 2. [Modeling](#Modeling)
     2a.[Linear Regression](#Linear-Regression)
     2b.[Decision Tree Model](#Decision-Tree-Model)
     2c.[Random Forest Model](#Random-Forest-Model)
     2d.[Gradient Boosting Model](#Gradient-Boosting-Model)
-    2e.
-    2f.
-3. 
+    2e.[Bagging Model](#Bagging-Model)
+    2f.[Testing Performance Across Models](#Testing-Performance-Across-Models)
+3. [Conclusions](#Conclusions)
 
-<a name="Cleaning The Data"></a>
+
+<a name="Cleaning-The-Data"></a>
 ## 1. Cleaning The Data 
 
 First I will load in the Python libraries I need like Pandas and download the dataset off the World Happiness Report website https://worldhappiness.report/ed/2021/#appendices-and-data.
@@ -222,6 +223,7 @@ happiness.to_csv("happiness_cleaned.csv")
 <a name="Modeling"></a>
 ## 2. Modeling
 
+<a name="Linear-Regression"></a>
 ### 2a. Linear Regression
 
 I need to extract my predictors and response variable from the dataframe. Then, I will split the dataset into a training set and a test set. I will also create a validation set and for all 3, compute the Mean Squared Error (MSE). The MSE measures the average squared difference between estimated values and actual values. I want to find the model that best minimizes it because it will best predict the happiness score.
@@ -259,6 +261,7 @@ The Linear Model's Test mean squared error is .391 and its Cross-validation mean
 
 I used Tableau to graph the linear models. Some social and economic variables like Log GDP Per Capita have a linear relationship with happiness score, while others like Generosity clearly do not.
 
+<a name="Decision-Tree-Model"></a>
 ### 2b. Decision Tree Model
 
 The next model I will test is the Decision Tree Model. We will find the best split before testing the Model.
@@ -320,6 +323,8 @@ def add_predictions(name, values):
 add_predictions('Tree Predictions', tree_reg.predict(X_test))
 ````
 ![plot](/Graphs/Reg-Tree.png)
+
+<a name="Random-Forest-Model"></a>
 ### 2c. Random Forest Model
 I will test the Random Forest Model.
 
@@ -391,6 +396,8 @@ The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth,
 add_predictions('RF Predictions', rf_reg.predict(X_test))
 ````
 ![plot](/Graphs/Random-Forest.png)
+
+<a name="Gradient-Boosting-Model"></a>
 ### 2d. Gradient Boosting Model
 
 I will test the Gradient Boosting Model.
@@ -449,6 +456,8 @@ The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth,
 add_predictions('Boost Predictions', boost_reg.predict(X_test))
 ````
 ![plot](/Graphs/Gradient-Boosting.png)
+
+<a name="Bagging-Model"></a>
 ### 2e. Bagging Model
 
 I will test the Bagging Model.
@@ -513,12 +522,13 @@ add_predictions('Bag Predictions', bag_reg.predict(X_test))
 ````
 ![plot](/Graphs/Bagging.png)
 
+<a name="Testing-Performance-Across-Models"></a>
 #### 2f. Testing Performance Across Models
 Now I can compare the mean squared errors across all the models to find the one that predicts Life Ladder the best.
 
 ![plot](/Graphs/MSE-Table.png)
 
-
+<a name="Conclusions"></a>
 ## 3. Conclusions
 
 As we can see in the Testing Performance Table, the Random Forest Model is the best at predicting happiness with the lowest Testing and Cross-validation Mean Squared Errors of .229 and .198, respectively.
