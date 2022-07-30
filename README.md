@@ -96,33 +96,30 @@ I want to capitalize all the column names.
 happiness.columns = map(str.title, happiness.columns) #Capitalize the first letter of each column name
 columns = list(happiness.columns.values) #column names
 columns
-
-
-
-
-
-
-
+````
 
 ['Country Name',
+
  'Year',
+ 
  'Life Ladder',
+ 
  'Log Gdp Per Capita',
+ 
  'Social Support',
+ 
  'Healthy Life Expectancy At Birth',
+ 
  'Freedom To Make Life Choices',
+ 
  'Generosity',
+ 
  'Perceptions Of Corruption']
-````
+
 The column names are now capitalized. Next I need to check the column data types.
 ````
 happiness.info()
-
-
-
-
-
-
+````
 
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 1949 entries, 0 to 1948
