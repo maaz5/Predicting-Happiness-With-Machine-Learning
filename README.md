@@ -59,6 +59,12 @@ Now I can clean the data starting with the variables.
 ````
 list(happiness.columns.values)
 
+
+
+
+
+
+
 ['Country name',
  'year',
  'Life Ladder',
