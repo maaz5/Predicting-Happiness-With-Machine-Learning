@@ -8,9 +8,10 @@ To answer these questions, I will test the Machine Learning Algorithms Linear Re
 
 ## Table of Contents
 
-1. [Cleaning The Data](##Cleaning-The-Data)
-2. [Modeling](##Modeling)
+1. [Cleaning The Data](#Cleaning-The-Data)
+2. [Modeling](#Modeling)
 
+<a name="Cleaning-The-Data"></a>
 ## 1. Cleaning The Data 
 
 First I will load in the Python libraries I need like Pandas and download the dataset off the World Happiness Report website https://worldhappiness.report/ed/2021/#appendices-and-data.
@@ -210,7 +211,10 @@ There are no more missing values. The last thing I need to do is write the data 
 ````
 happiness.to_csv("happiness_cleaned.csv") 
 ````
+
+<a name="Modeling"></a>
 ## 2. Modeling
+
 ### 2a. Linear Regression
 
 I need to extract my predictors and response variable from the dataframe. Then, I will split the dataset into a training set and a test set. I will also create a validation set and for all 3, compute the Mean Squared Error (MSE). The MSE measures the average squared difference between estimated values and actual values. I want to find the model that best minimizes it because it will best predict the happiness score.
