@@ -58,29 +58,19 @@ Now I can clean the data starting with the variables.
 
 ````
 list(happiness.columns.values)
-````
 
 ['Country name',
-
  'year',
- 
  'Life Ladder',
- 
  'Log GDP per capita',
- 
  'Social support',
- 
  'Healthy life expectancy at birth',
- 
  'Freedom to make life choices',
- 
  'Generosity',
- 
  'Perceptions of corruption',
- 
  'Positive affect',
- 
  'Negative affect']
+ ````
 
 Life Ladder or the Cantril Scale is a question where respondents are asked to rate their life on a scale from 0 through 10 where 0 is the worst possible life for them and 10 is the best possible life. This is the happiness score the models will try to predict.
 
@@ -96,61 +86,49 @@ I want to capitalize all the column names.
 happiness.columns = map(str.title, happiness.columns) #Capitalize the first letter of each column name
 columns = list(happiness.columns.values) #column names
 columns
-````
+
+
+
+
+
+
+
 
 ['Country Name',
-
  'Year',
- 
  'Life Ladder',
- 
  'Log Gdp Per Capita',
- 
  'Social Support',
- 
  'Healthy Life Expectancy At Birth',
- 
  'Freedom To Make Life Choices',
- 
  'Generosity',
- 
  'Perceptions Of Corruption']
+````
 
 The column names are now capitalized. Next I need to check the column data types.
+
 ````
 happiness.info()
-````
+
+
+
+
 
 <class 'pandas.core.frame.DataFrame'>
-
 RangeIndex: 1949 entries, 0 to 1948
-
 Data columns (total 9 columns):
-
  #   Column                            Non-Null Count  Dtype  
- 
 ---  ------                            --------------  -----  
-
  0   Country Name                      1949 non-null   object 
- 
  1   Year                              1949 non-null   int64  
- 
  2   Life Ladder                       1949 non-null   float64
- 
  3   Log Gdp Per Capita                1913 non-null   float64
- 
  4   Social Support                    1936 non-null   float64
- 
  5   Healthy Life Expectancy At Birth  1894 non-null   float64
- 
  6   Freedom To Make Life Choices      1917 non-null   float64
- 
  7   Generosity                        1860 non-null   float64
- 
  8   Perceptions Of Corruption         1839 non-null   float64
- 
 dtypes: float64(7), int64(1), object(1)
-
 memory usage: 137.2+ KB
 ````
 Here we see that 7 columns use data type float64. If I want the models to run, I need to convert the column values to the data type float32.
