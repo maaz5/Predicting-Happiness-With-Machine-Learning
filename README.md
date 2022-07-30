@@ -425,7 +425,7 @@ Freedom To Make Life Choices            10.631933               6.922314
 Generosity                               4.744188               3.166406
 Perceptions Of Corruption                7.206964               3.163956
 ````
-![plot](/Graphs/Variable-Importance-for-Gradient-Boosting.png)
+![plot](/Graphs/Boosting-Importance.png)
 
 The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth, Social Support, Freedom To Make Choices, Generosity, and Perceptions of Corruption. Log GDP Per Capita is the most important variable by far, which was not the case in the Random Forest Model.
 
@@ -488,7 +488,7 @@ Freedom To Make Life Choices                  7.203479
 Generosity                                    3.793037  
 Perceptions Of Corruption                     3.586534  
 ````
-![plot](/Graphs/Importance-Bagging.png)
+![plot](/Graphs/Bagging-Importance.png)
 
 The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth, Social Support, Freedom To Make Choices, Generosity, and Perceptions of Corruption. Log GDP Per Capita is the most important variable by far, like the Gradient Boosting Model.
 
