@@ -496,8 +496,10 @@ The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth,
 add_predictions('Bag Predictions', bag_reg.predict(X_test))
 ````
 ![plot](/Graphs/Bagging.png)
+
 #### 2f. Testing Performance Across Models
 Now I can compare the mean squared errors across all the models to find the one that predicts Life Ladder the best.
+
 ![plot](/Graphs/Test-CV Table.png)
 
 ## Conclusions
