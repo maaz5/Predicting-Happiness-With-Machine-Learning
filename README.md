@@ -10,11 +10,17 @@ To answer these questions, I will test the Machine Learning Algorithms Linear Re
 
 1. [Cleaning The Data](#Cleaning-The-Data)
 2. [Modeling](#Modeling)
+
     2a.[Linear Regression](#Linear-Regression)
+    
     2b.[Decision Tree Model](#Decision-Tree-Model)
+    
     2c.[Random Forest Model](#Random-Forest-Model)
+    
     2d.[Gradient Boosting Model](#Gradient-Boosting-Model)
+    
     2e.[Bagging Model](#Bagging-Model)
+    
     2f.[Testing Performance Across Models](#Testing-Performance-Across-Models)
 3. [Conclusions](#Conclusions)
 
