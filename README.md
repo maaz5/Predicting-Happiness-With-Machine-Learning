@@ -367,7 +367,7 @@ Freedom To Make Life Choices            10.631933
 Generosity                               4.744188
 Perceptions Of Corruption                7.206964
 ````
-![plot](/Graphs/Random-Forest-Importance.png)
+![plot](/Graphs/RF-Importance.png)
 
 The order of importance is Log GDP Per Capita, Healthy Life Expectancy At Birth, Social Support, Freedom To Make Choices, Perceptions Of Corruption, and Generosity.
 
