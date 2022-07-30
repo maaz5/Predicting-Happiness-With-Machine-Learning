@@ -58,14 +58,7 @@ Now I can clean the data starting with the variables.
 
 ````
 list(happiness.columns.values)
-
-
-
-
-
-
-
-
+````
 ['Country name',
  'year',
  'Life Ladder',
@@ -77,7 +70,6 @@ list(happiness.columns.values)
  'Perceptions of corruption',
  'Positive affect',
  'Negative affect']
-````
 
 Life Ladder or the Cantril Scale is a question where respondents are asked to rate their life on a scale from 0 through 10 where 0 is the worst possible life for them and 10 is the best possible life. This is the happiness score the models will try to predict.
 
