@@ -122,20 +122,35 @@ happiness.info()
 ````
 
 <class 'pandas.core.frame.DataFrame'>
+
 RangeIndex: 1949 entries, 0 to 1948
+
 Data columns (total 9 columns):
+
  #   Column                            Non-Null Count  Dtype  
+ 
 ---  ------                            --------------  -----  
+
  0   Country Name                      1949 non-null   object 
+ 
  1   Year                              1949 non-null   int64  
+ 
  2   Life Ladder                       1949 non-null   float64
+ 
  3   Log Gdp Per Capita                1913 non-null   float64
+ 
  4   Social Support                    1936 non-null   float64
+ 
  5   Healthy Life Expectancy At Birth  1894 non-null   float64
+ 
  6   Freedom To Make Life Choices      1917 non-null   float64
+ 
  7   Generosity                        1860 non-null   float64
+ 
  8   Perceptions Of Corruption         1839 non-null   float64
+ 
 dtypes: float64(7), int64(1), object(1)
+
 memory usage: 137.2+ KB
 ````
 Here we see that 7 columns use data type float64. If I want the models to run, I need to convert the column values to the data type float32.
