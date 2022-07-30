@@ -8,8 +8,8 @@ To answer these questions, I will test the Machine Learning Algorithms Linear Re
 
 ## Table of Contents
 
-1. [Cleaning The Data](#Cleaning-The-Data)
-2. [Modeling](#Modeling)
+1. [Cleaning The Data](##Cleaning-The-Data)
+2. [Modeling](##Modeling)
 
 ## 1. Cleaning The Data 
 
