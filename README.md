@@ -1,5 +1,5 @@
 
-# What social and economic factors are most important in predicting a country's happiness?
+# What Social And Economic Factors Are Most Important In Predicting A Country's Happiness?
 
 The World Happiness Report is a publication that uses survey data to show how people across the world rate their happiness. 
 An entry in the report is a country's average response to life evaluation questions for a given year between 2005 to 2020. Several social and economic variables are measured in these questions, such as the Freedom To Make Life Choices and Log GDP Per Capita. I was wondering which of these factors are the most important in predicting a country's happiness? I also want to find out which type of model performs the best at predicting a country's happiness. 
